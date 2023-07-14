@@ -8,9 +8,14 @@ class MoviesStore {
   find(name) {
     return this.moviesData.filter((m) => m.name === name)
   }
+<<<<<<< HEAD
   //func add the movies
   add() {
     //
+=======
+  add(movie) {
+    this.moviesData.push(movie)
+>>>>>>> 17-APIaddMovie
   }
 }
 module.exports = MoviesStore
