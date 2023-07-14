@@ -31,3 +31,8 @@
 
 - lay thong tin movies theo ten bang ham find roi luu ra va xuat ra ben ngoai bang ham send
 - kiem tra dieu kien doi tuong chua danh sach phim neu < 1 thi xuat thong bao loi..
+
+# 15
+
+- su dung nodemon : npm i -g nodemon
+- setup start voi nodemon
