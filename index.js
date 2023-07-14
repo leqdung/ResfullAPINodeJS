@@ -41,7 +41,8 @@ app.get('/movies/:name/:year', (req, res) => {
     payload: foundMovies.pop(),
   })
 })
-//
+
+app.post()
 app.listen(3000, () => {
   console.log('server listen at port : 127.0.0.1:3000')
 })

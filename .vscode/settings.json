@@ -1,5 +1,1 @@
-{
-  // "json.schemaDownload.enable": true,
-  "editor.fontSize": 13,
-  "files.autoSave": "onFocusChange"
-}
+{}

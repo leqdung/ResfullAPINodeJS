@@ -36,3 +36,7 @@
 
 - su dung nodemon : npm i -g nodemon
 - setup start voi nodemon
+
+# 16
+
+- xay dung request body
