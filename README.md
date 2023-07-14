@@ -15,3 +15,8 @@
 - xay dung movie store
 - redirect / => /movies
 - kiem tra tren insomnia => neu tra ve dung ra noi dung file json, neu sai thi loi server hoac code
+
+# 12
+
+- cach lay gia tri parameter tren url dung res.param(...)
+- tra ve doi tuong co chua cac thuoc tinh la thanh phan cua param
