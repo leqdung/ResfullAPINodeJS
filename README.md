@@ -26,3 +26,8 @@
 - lay param tu nguoi dung
 - lay status code cua res. thay doi status code cua res.
 - dung status code de thong bao thuoc tinh url
+
+# 14
+
+- lay thong tin movies theo ten bang ham find roi luu ra va xuat ra ben ngoai bang ham send
+- kiem tra dieu kien doi tuong chua danh sach phim neu < 1 thi xuat thong bao loi..
