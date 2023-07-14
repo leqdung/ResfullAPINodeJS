@@ -2,8 +2,15 @@ let express = require('express')
 let app = express()
 let MoviesStore = require('./moviesStore')
 let moviesStore = new MoviesStore()
+let bodyParser = require('body-parser')
 // console.log(dataStore)
 
+//khi POST method dùng bodyParser để lấy rqequest body
+app.use(
+  bodyParser.json({
+    type: 'application/json',
+  })
+)
 app.get('/movies', (req, res) => {
   return res.send(moviesStore)
 })
@@ -42,7 +49,10 @@ app.get('/movies/:name/:year', (req, res) => {
   })
 })
 
-app.post()
+app.post('/movies', (req, res) => {
+  console.log(req.body)
+  return res.send({})
+})
 app.listen(3000, () => {
   console.log('server listen at port : 127.0.0.1:3000')
 })

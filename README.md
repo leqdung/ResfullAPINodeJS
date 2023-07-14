@@ -40,3 +40,7 @@
 # 16
 
 - xay dung request body
+- Muốn lấy thông tin người dùng gửi lên( request body) dạng post (vì dữ liệu dạng này dùng kiểu json) yêu cầu dùng 1 middlewere
+- chọn đúng type bodyParse
+- lay bằng req.body
+- tao phuong thuc post roi send object len server tra ve va ghi log de kiem tra
