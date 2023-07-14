@@ -44,3 +44,10 @@
 - chọn đúng type bodyParse
 - lay bằng req.body
 - tao phuong thuc post roi send object len server tra ve va ghi log de kiem tra
+
+# 17
+
+- tạo phương thức add trong class chứa moviedatga
+- chỉ cần truyên 1 đối tượng movie vao ham push()
+- viết api thêm vào thông qua req.body
+- kiểm tra thêm item và kiểm tra lại

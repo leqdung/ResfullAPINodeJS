@@ -51,7 +51,10 @@ app.get('/movies/:name/:year', (req, res) => {
 
 app.post('/movies', (req, res) => {
   console.log(req.body)
-  return res.send({})
+  moviesStore.add(req.body)
+  return res.send({
+    message: 'Movie added succesfully',
+  })
 })
 app.listen(3000, () => {
   console.log('server listen at port : 127.0.0.1:3000')
