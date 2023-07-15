@@ -50,12 +50,23 @@ app.get('/movies/:name/:year', (req, res) => {
 })
 
 app.post('/movies', (req, res) => {
-  console.log(req.body)
-  moviesStore.add(req.body)
+  //kiem tra neu nguoi dung gui post request len khong dung yeu cau
+  if (!req.body.Title || req.body.Title.trim().length < 1) {
+    res.statusCode = 400 //status code change
+    return res.send({
+      message: 'missing or invalid title',
+    })
+  }
+  //kiem tra movie co chua va thong bao
+  if (moviesStore.has(req.body.Title)) {
+    res.statusCode = 400
+    return res.send({ message: 'Movie added succesfully' })
+  }
   return res.send({
-    message: 'Movie added succesfully',
+    message: 'Movie add succesfully', //return message
   })
 })
+
 app.listen(3000, () => {
   console.log('server listen at port : 127.0.0.1:3000')
 })
