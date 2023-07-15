@@ -53,11 +53,7 @@ app.post('/movies', (req, res) => {
   console.log(req.body)
   moviesStore.add(req.body)
   return res.send({
-<<<<<<< HEAD
-    message: 'add movies succesefully',
-=======
     message: 'Movie added succesfully',
->>>>>>> 17-APIaddMovie
   })
 })
 app.listen(3000, () => {
