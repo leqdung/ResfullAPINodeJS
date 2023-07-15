@@ -50,7 +50,7 @@ app.get('/movies/:name/:year', (req, res) => {
 })
 
 app.post('/movies', (req, res) => {
-  //kiem tra neu nguoi dung gui post request len khong dung yeu cau
+  //kiem tra noi dung nguoi dung gui post request len khong dung yeu cau
   if (!req.body.Title || req.body.Title.trim().length < 1) {
     res.statusCode = 400 //status code change
     return res.send({
@@ -60,8 +60,11 @@ app.post('/movies', (req, res) => {
   //kiem tra movie co chua va thong bao
   if (moviesStore.has(req.body.Title)) {
     res.statusCode = 400
-    return res.send({ message: 'Movie added succesfully' })
+    return res.send({
+      message: 'Movie added exited',
+    })
   }
+  moviesStore.add(req.body)
   return res.send({
     message: 'Movie add succesfully', //return message
   })

@@ -51,3 +51,8 @@
 - chỉ cần truyên 1 đối tượng movie vao ham push()
 - viết api thêm vào thông qua req.body
 - kiểm tra thêm item và kiểm tra lại
+
+# 18
+
+- kiểm tra xem người dùng gửi film lên có đúng ko
+- kiểm tra xe bộ phim đó có tồn tại hay không

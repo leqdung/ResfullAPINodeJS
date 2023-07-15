@@ -12,6 +12,10 @@ class MoviesStore {
   add(movie) {
     this.moviesData.push(movie)
   }
+  has(title) {
+    let hasmovie = this.find(title)
+    return hasmovie.length > 1
+  }
 }
 module.exports = MoviesStore
 // doi tuong nay kiem soat du lieu tu file json
