@@ -62,3 +62,9 @@
 
 - cú pháp mơis của es6
 - dùng assign() để sao chép đối tượng và đối tượng mới này không cùng địa chỉ đối tượng ban đầu
+
+# 20
+
+- dùng slide() để copy du lieu sang arr mới
+- toan tu spread operator
+- co the dung concat()
