@@ -17,7 +17,9 @@ app.get('/movies', (req, res) => {
 app.get('/', (req, res) => {
   return res.redirect('/movies')
 })
-//param :/movies/the game
+/**
+ * param :/movies/the game
+ */
 app.get('/movies/:title', (req, res) => {
   console.log(req.params)
   //   console.log(res.statusCode)
@@ -36,7 +38,7 @@ app.get('/movies/:title', (req, res) => {
 })
 app.get('/movies/:title/:year', (req, res) => {
   //   res.statusCode = 402
-  //   console.log(req.params)
+  //   console.log(req.params) lê quang dũng
   //   console.log(res.statusCode)
   let foundMovies = moviesStore.find(req.params.title)
   if (foundMovies.length < 1) {
@@ -67,7 +69,7 @@ app.post('/movies', (req, res) => {
       message: 'missing or invalid title',
     })
   }
-  //kiem tra movie co chua va thong bao
+  //kiem tra movie có chứa hay không và thông báo
   if (moviesStore.has(req.body.name)) {
     res.statusCode = 400
     return res.send({
@@ -78,6 +80,26 @@ app.post('/movies', (req, res) => {
   console.log('🚀 ~ log:', req.body)
   return res.send({
     message: 'Movie add succesfully', //return message
+  })
+})
+/**
+ * delete movie
+ */
+app.delete('/movies/:title', (req, res) => {
+  /**
+   * check xem movie co ton tai hay chua
+   * neu chua co  thi message
+   * neu co roi thi xoa va message
+   */
+  if (!moviesStore.has(req.params.title)) {
+    res.statusCode = 404
+    return res.send({
+      message: 'Movie not found',
+    })
+  }
+  moviesStore.remove(req.params.title)
+  return res.send({
+    message: 'Delete moive succesfully',
   })
 })
 

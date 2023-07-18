@@ -60,7 +60,7 @@
 
 # 19
 
-- cú pháp mơis của es6
+- cú pháp mới của es6
 - dùng assign() để sao chép đối tượng và đối tượng mới này không cùng địa chỉ đối tượng ban đầu
 
 # 20
@@ -75,3 +75,4 @@
 - neu ko ton tại thi thông báo 404
 - co ton tại thì thông báo đã xóa thành công
 - remove movie
+- test chức năng delete trên insomina
