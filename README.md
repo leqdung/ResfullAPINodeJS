@@ -68,3 +68,10 @@
 - dùng slide() để copy du lieu sang arr mới
 - toan tu spread operator
 - co the dung concat()
+
+# 22
+
+- kiem co ton tai bo phim khong
+- neu ko ton tại thi thông báo 404
+- co ton tại thì thông báo đã xóa thành công
+- remove movie
