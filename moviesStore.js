@@ -14,7 +14,7 @@ class MoviesStore {
   }
   has(title) {
     let hasmovie = this.find(title)
-    return hasmovie.length > 1
+    return hasmovie.length > 0
   }
 }
 module.exports = MoviesStore
