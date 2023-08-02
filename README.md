@@ -54,5 +54,6 @@
 
 # 18
 
+- khi người dùng gửi 1 request post lên server cần phải kiểm tra
 - kiểm tra xem người dùng gửi film lên có đúng ko
 - kiểm tra xe bộ phim đó có tồn tại hay không
