@@ -20,3 +20,9 @@
 
 - cach lay gia tri parameter tren url dung res.param(...)
 - tra ve doi tuong co chua cac thuoc tinh la thanh phan cua param
+
+# 13
+
+- lay param tu nguoi dung
+- lay status code cua res. thay doi status code cua res.
+- dung status code de thong bao thuoc tinh url
